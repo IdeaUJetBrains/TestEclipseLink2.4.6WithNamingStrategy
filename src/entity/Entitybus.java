@@ -5,8 +5,9 @@ import javax.persistence.*;
 /**
  * Created by Olga Pavlova on 9/16/2016.
  */
-@Entity
+@Entity(name = "entitybus")
 @Table(name = "ENTITYBUS")
+@NamedQuery(name = "My.Test1", query = "SELECT e FROM entitybus e ")
 public class Entitybus {
     private int eid;
     private String enumber;
